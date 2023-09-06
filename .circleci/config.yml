@@ -2,7 +2,6 @@ version: 2.1
  
 orbs:
   android: circleci/android@0.2.1
-  java: circleci/openjdk@1.1.8
  
 jobs:
   build:
@@ -22,9 +21,6 @@ jobs:
           paths:
             - ~/.android/build-cache
             - ~/.android/cache
-      - orbs/java/install
-        parameters:
-          version: 17
       - run:
           name: Run Build
           command: ./gradlew build
