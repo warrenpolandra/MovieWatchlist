@@ -1,8 +1,9 @@
 version: 2.1
- 
+
 orbs:
   android: circleci/android@0.2.1
- 
+  java: circleci/openjdk@1.1.8 # Use the latest version of the setup-java orb
+
 jobs:
   build:
     executor: android/android
@@ -21,6 +22,9 @@ jobs:
           paths:
             - ~/.android/build-cache
             - ~/.android/cache
+      - orbs/java/install # Use the setup-java orb to install Java 17
+        parameters:
+          version: 17
       - run:
           name: Run Build
           command: ./gradlew build
