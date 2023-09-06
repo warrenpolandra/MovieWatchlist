@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_name">Movie Watchlist</string>
+    <string name="favorite_movies">Favorite Movies</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="something_went_wrong">Something went wrong!\nTry to restart the app.</string>
+    <string name="movie_overview">Overview</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="tools_movie_date">31-12-2022</string>
+    <string name="title_favorite">Favorite</string>
+</resources>
