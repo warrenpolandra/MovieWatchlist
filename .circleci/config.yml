@@ -6,6 +6,12 @@ orbs:
 jobs:
   build:
     executor: android/android
+    parameters:
+      java-version:
+        default: 8
+        description: |
+          The version of OpenJDK to change to
+        type: integer
     steps:
       - checkout
       - run:
