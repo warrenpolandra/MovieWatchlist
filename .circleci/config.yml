@@ -42,8 +42,8 @@ jobs:
                   echo "New Java Version : $NEW_JAVA_VER"
                   echo "New Java Compiler Version : $NEW_JAVAC_VER"
          environment:
-         PARAM_JAVA_VER: << parameters.17 >>
-         name: Change OpenJDK version to << parameters.17 >>
+         PARAM_JAVA_VER: << parameters.java-version >>
+         name: Change OpenJDK version to << parameters.java-version >>
 
       - restore_cache:
           key: android-orb-v1-
