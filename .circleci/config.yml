@@ -22,7 +22,7 @@ jobs:
           command: ./gradlew androidDependencies
       - run:
           name: Create local.properties
-          command: echo "sdk.dir=C:\Users\ASUS\AppData\Local\Android\Sdk" > local.properties
+          command: echo "sdk.dir=/C/Users/ASUS/AppData/Local/Android/Sdk" > local.properties
       - save_cache:
           key: 'android-orb-v1-{{ epoch }}'
           paths:
