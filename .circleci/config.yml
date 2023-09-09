@@ -14,6 +14,8 @@ jobs:
         description: |
           The version of OpenJDK to change to
         type: integer
+    environment:
+      ANDROID_HOME: C:\Users\ASUS\AppData\Local\Android\Sdk
     steps:
       - checkout
       - run:
