@@ -28,11 +28,8 @@ android {
             minifyEnabled false
         }
     }
-     testOptions {
-        unitTests {
-            useUnifiedTestPlatform = false
-        }
-    }
+    useAndroidX = true
+    enableJetifier = true
 }
 
 dependencies {
