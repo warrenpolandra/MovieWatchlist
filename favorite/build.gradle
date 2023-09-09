@@ -28,8 +28,6 @@ android {
             minifyEnabled false
         }
     }
-    useAndroidX = true
-    enableJetifier = true
 }
 
 dependencies {
