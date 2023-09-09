@@ -28,6 +28,11 @@ android {
             minifyEnabled false
         }
     }
+     testOptions {
+        unitTests {
+            useUnifiedTestPlatform = false
+        }
+    }
 }
 
 dependencies {
